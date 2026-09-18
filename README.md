@@ -34,6 +34,10 @@
 
 Ce n'est ni un comparateur ni un moteur de réservation : c'est une collection. On y entre sur invitation, ou en sollicitant un accès. Le ton est volontairement décalé (« se faire plumer, d'accord, mais quelque part d'inoubliable »), le design éditorial, l'interface en français.
 
+## Version SaaS ?
+
+Oui --> https://lepigeonexigeant.fr
+
 ### Ce que l'on peut faire
 
 - **Parcourir la collection** par pays puis par ville, rechercher un nom, ouvrir une fiche avec galerie plein écran.
