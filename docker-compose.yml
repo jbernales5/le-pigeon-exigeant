@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: bookrich-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bookrich
+      POSTGRES_PASSWORD: bookrich
+      POSTGRES_DB: bookrich
+    ports:
+      - "5432:5432"
+    volumes:
+      - bookrich-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bookrich -d bookrich"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  bookrich-pgdata:

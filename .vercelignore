@@ -1,0 +1,12 @@
+# Vercel n'applique plus .gitignore quand ce fichier existe : tout lister ici.
+.git
+.git2
+node_modules
+.next
+storage
+logos
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

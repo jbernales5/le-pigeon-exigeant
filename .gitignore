@@ -1,0 +1,55 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files — only the example is versioned
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local storage
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+.vercel
+
+# dépôt masqué pendant `vercel` (voir CLAUDE.md)
+.git2
+
+# assets bruts (sources des logos, captures d'écran non optimisées) — les dérivés vivent dans public/brand et docs/
+/logos/
+/screenshots/
+
+# outillage local
+.claude/
+/.render-*.mts
+
+deploy.sh
